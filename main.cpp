@@ -24,6 +24,22 @@ int main()
   //the first and second blanks should be replaced with the coordinates
   //of the element's row and column and the third blank should be replaced
   //with the value of that element
+  int row;
+  int col;
+  int TRows;
+  int TCols;
+  std::cin >> TRows;
+  std::cin >> TCols;
+  for (row = 0 ; row < TRows ; row++)
+  {
+    col = 0;
+    while (col < TCols)
+    {
+        std::cout << "Row " << row << "Column " << col << "is " << wordGrid[row][col] << std::endl;
+        col++;
+    }
+ 
+  }
 
   
 
